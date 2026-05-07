@@ -9,17 +9,53 @@
             font-family: 'Helvetica Neue', Arial, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 5%;
-            background-color: #fafafa;
+            padding: 0;
+            background-color: #ffffff;
             color: #333;
         }
+
+        /* Rotating Banner Styles */
+        .announcement-bar {
+            background-color: #000000;
+            color: #ffffff;
+            padding: 12px 0;
+            overflow: hidden;
+            white-space: nowrap;
+            position: relative;
+            width: 100%;
+            font-size: 13px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+        }
+        .announcement-content {
+            display: inline-block;
+            padding-left: 100%;
+            /* Increased duration slightly to account for the longer text */
+            animation: marquee 45s linear infinite;
+        }
+        
+        @keyframes marquee {
+            0% { transform: translate(0, 0); }
+            100% { transform: translate(-100%, 0); }
+        }
+
         .container {
             max-width: 700px;
             margin: 0 auto;
             background: #ffffff;
-            padding: 50px;
-            border: 1px solid #eaeaea;
+            padding: 60px 20px;
+            border: none;
         }
+
+        /* Logo Styles */
+        .logo {
+            max-width: 180px; 
+            margin-bottom: 40px;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
         h1 {
             font-size: 24px;
             margin-bottom: 30px;
@@ -52,7 +88,16 @@
     </style>
 </head>
 <body>
+
+    <div class="announcement-bar">
+        <div class="announcement-content">
+            ORDERS ARE SHIPPED MONDAY - FRIDAY. ANY EXPRESS OR SATURDAY DELIVERY ORDERS MADE AFTER 3PM (GMT/BST) OR ON THE WEEKEND ARE SHIPPED NEXT WORKING DAY. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SPEND £300 MORE AND GET FREE SHIPPING! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FREE UK STANDARD DELIVERY ON ORDERS OVER £300 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CEFINN.COM IS NOW CLOSED. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CUSTOMERS HAVE 14 DAYS FROM RECEIPT TO RETURN ANY ELIGIBLE ITEMS. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOR RETURNS OR ANY RELATED QUERIES, CUSTOMERS ARE ASKED TO CONTACT THE CUSTOMER SERVICE TEAM VIA EMAIL HELP@CEFINN.COM &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ORDERS ARE SHIPPED MONDAY - FRIDAY. ANY EXPRESS OR SATURDAY DELIVERY ORDERS MADE AFTER 3PM (GMT/BST) OR ON THE WEEKEND ARE SHIPPED NEXT WORKING DAY. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; SPEND £300 MORE AND GET FREE SHIPPING! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FREE UK STANDARD DELIVERY ON ORDERS OVER £300 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CEFINN.COM IS NOW CLOSED. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; CUSTOMERS HAVE 14 DAYS FROM RECEIPT TO RETURN ANY ELIGIBLE ITEMS. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FOR RETURNS OR ANY RELATED QUERIES, CUSTOMERS ARE ASKED TO CONTACT THE CUSTOMER SERVICE TEAM VIA EMAIL HELP@CEFINN.COM
+        </div>
+    </div>
+
     <div class="container">
+        <img src="https://www.cefinn.com/cdn/shop/files/Cefinn_Logo_Black_1_150x.png" alt="Cefinn Logo" class="logo" onerror="this.onerror=null; this.src=''; this.alt='CEFINN'; this.style.fontSize='36px'; this.style.fontWeight='bold'; this.style.letterSpacing='4px'; this.style.marginBottom='40px';">
+
         <h1>Cefinn.com is now closed</h1>
         <p>As the Cefinn journey comes to an end, I would like to thank all the amazing women who have shopped with us over the last 8 years and hope that your Cefinn pieces will continue to be worn for many seasons to come.</p>
         <p>I have been lucky to have worked with an exceptional team of lovely, hard working and talented people who I will miss and be eternally grateful to.</p>
@@ -63,5 +108,6 @@
             <p>For returns or any related queries, customers are asked to contact the customer service team via email at <a href="mailto:help@cefinn.com">help@cefinn.com</a></p>
         </div>
     </div>
+
 </body>
 </html>
